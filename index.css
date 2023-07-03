@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://wallpaperaccess.com/full/4542408.jpg"), linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 80%;
+    background-color: white;
+    padding: 50px 60px 70px;
+}
+
+.form-box h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative;
+    font-family: "Roboto";
+}
+
+.form-box h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: 12px;
+    left: 48%;
+    top: 40px;
+    transform: translateX(-50%, -50%);
+
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 15px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+
+.input-field i {
+    margin-left: 15px;
+    color:#999999;
+}
+
+form p {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+form a {
+    font-size: 15px;
+    color: #2110de;
+}
+
+.btn-field {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-field button {
+    flex-basis: 48%;
+    background: #3c00a0;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+    font-family: "Roboto";
+}
+
+.input-group {
+    height: 280px;
+}
+
+.btn-field button.disable {
+    background: #eaeaea;
+    color: #555555;
+}
